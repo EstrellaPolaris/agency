@@ -41,9 +41,13 @@
     letter-spacing: 0.05em;
 }
 .title__ft, .title__sd, .title__td {
-    font-size: calc(3.21rem + 5.35vw);
+    font-size: calc(3.21rem + 7.35vw);
     line-height: 0.8;
     font-weight: 500;
+    letter-spacing: 0em;
+    @media (max-width: 1024px) {
+        font-size: calc(3rem + 5.35vw);
+    }
     @media (max-width: 850px) {
         font-size: calc(1.925rem + 5.35vw);
     }
