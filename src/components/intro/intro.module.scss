@@ -36,7 +36,7 @@
 }
   
 .fluid_font_size {
-    @include fluidFontSize(36px, 180px, 300px, 1920px, px);
+    @include fluidFontSize(58px, 180px, 300px, 1920px, px);
     font-weight: 500;
 }
 
@@ -46,7 +46,7 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    padding-top: 9vh;
+    padding-top: 7vh;
 }
 .container__hero__title__left{
     display: flex;
@@ -55,7 +55,7 @@
     letter-spacing: 0em;
 }
 .fluid_font_size:last-child {
-    padding-top: 0.5vh;
+    margin-top: 0.5vh;
     padding-left: 1vw;
 }
 .container__hero__title__right{
@@ -79,11 +79,27 @@
 }
 .title__fh {
     justify-content: right;
-    width: 28vw;
-    font-size: calc(1rem + 0.4vw);
+    width: 35vw;
+    padding-top: 3vh;
+    @include fluidFontSize(26px, 36px, 300px, 1920px, px);
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.05em;
+    @media (max-width: 1024px) {
+        line-height: 1.25;
+        width: 40vw;
+    }
+    @media (max-width: 768px) {
+        line-height: 1.25;
+        width: 50vw;
+    }
+    @media (max-width: 576px) {
+        line-height: 1.2;
+        width: 90vw;
+    }
+    @media (max-width: 420px) {
+        width: 100vw;
+    }
 }
 
 .container__hero__img {
