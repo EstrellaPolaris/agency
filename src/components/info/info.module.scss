@@ -1,25 +1,23 @@
 .info{
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding-top: 3.75rem;
+    padding-bottom:  3.75rem;
 }
 .container__info{
-    height: 100%;
+    height: 100% ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Poppins';
-    margin-top: 3.75rem;
-    margin-bottom: 3.75rem;
 }
 .container__info__title{
     display: flex;
     justify-content: right;
 }
 .container__info__subtitle{
+    flex-direction: column;
+    display: flex;
     font-weight: 300;
-    height: 50%;
 }
 .container__info__adv{
     padding-top: 0.5vh;
