@@ -47,9 +47,9 @@ const Intro = () => {
     >
      
 
-      <article className={classes.container__hero__title} >
-        <motion.div custom={1} variants={textAnimationright} className={classes.title__ft}>Technology</motion.div>
-        <motion.div custom={1} variants={textAnimationright} className={classes.title__sd}> +</motion.div>
+      <article className={classes.container__hero__title__left} >
+        <motion.div custom={1} variants={textAnimationright} className={classes.fluid_font_size}>Technology</motion.div>
+        <motion.div custom={1} variants={textAnimationright} className={classes.fluid_font_size}> +</motion.div>
       </article>
       
       <article className={classes.container__hero__news}>
@@ -57,8 +57,12 @@ const Intro = () => {
           <div className={classes.blog}>On the blog</div>
           <div className={classes.blog__title}>Luxury e-Commerce</div>
         </motion.div>
-        <motion.div custom={1} variants={textAnimationleft} className={classes.title__td}>Creativity</motion.div>
       </article>
+      <article className={classes.container__hero__title__right} >
+        <motion.div custom={1} variants={textAnimationleft} className={`${classes.fluid_font_size} blue`}>Creativity</motion.div>
+      </article>
+        
+      
 
       <article className={classes.container__hero__usp}>
         <motion.div custom={2} variants={textAnimationup}className={`${classes.container__hero__roundbtn}`}>
@@ -66,7 +70,6 @@ const Intro = () => {
         </motion.div>
         <motion.h1 custom={2} variants={textAnimationup} className={classes.title__fh}>Get the edge with innovative product development, high-end web design, and effective development.</motion.h1>
       </article>
-      
     </motion.section>
   )
 }
