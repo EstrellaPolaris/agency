@@ -36,7 +36,7 @@
 }
   
 .fluid_font_size {
-    @include fluidFontSize(58px, 180px, 300px, 1920px, px);
+    @include fluidFontSize(52px, 180px, 300px, 1920px, px);
     font-weight: 500;
 }
 
@@ -47,6 +47,9 @@
     justify-content: center;
     overflow: hidden;
     padding-top: 7vh;
+    @media (max-width: 576px) {
+        padding-top: 3.5vh;
+    }
 }
 .container__hero__title__left{
     display: flex;

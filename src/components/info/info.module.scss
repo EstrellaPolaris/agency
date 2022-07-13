@@ -44,7 +44,7 @@
     padding-top: 3.75rem;
     padding-bottom:  3.75rem;
     @media (max-width: 576px) {
-        padding-bottom: 7.5rem;
+        padding-bottom: 5.5rem;
     }
 }
 .container__info{
@@ -69,7 +69,7 @@
     border-left: 1px solid #008DFC;
 }
 .info__title{
-    @include fluidFontSize(52px, 98px, 300px, 1920px, px);
+    @include fluidFontSize(50px, 98px, 300px, 1920px, px);
     font-weight: 400;
     line-height: 0.8;
 }
