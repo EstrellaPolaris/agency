@@ -36,7 +36,7 @@
 }
   
 .fluid_font_size {
-    @include fluidFontSize(24px, 180px, 300px, 1920px, px);
+    @include fluidFontSize(36px, 180px, 300px, 1920px, px);
     font-weight: 500;
 }
 
