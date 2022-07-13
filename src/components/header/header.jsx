@@ -23,7 +23,8 @@ const Header = () => {
       viewport={{ amount: 0.1, once: true}}
       custom={2} variants={textAnimationdown}
       className={classes.header}>
-      <Link className={classes.header__nav} to="/"> LOGO</Link>
+      <Link viewport={{ amount: 0.1, once: true}}
+      className={classes.header__nav} to="/"> LOGO</Link>
       <ul className={classes.container__nav}>
         <Link className={classes.nav__link} to="/work">Work</Link>
         <Link className={classes.nav__link} to="/services">Services</Link>
