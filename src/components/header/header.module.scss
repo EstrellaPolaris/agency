@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid red;
+}
+.a, .nav-link, .header__nav, .nav__link, .container__nav {
+    padding: 0 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.05em;
+}
+.header__nav{
+    border:1px solid #008DFC;
+}
+.btnCustom{
+    background-color: transparent;
+    border: 1px solid #008DFC ;
+}
