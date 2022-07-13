@@ -43,6 +43,9 @@
     height: 100vh;
     padding-top: 3.75rem;
     padding-bottom:  3.75rem;
+    @media (max-width: 576px) {
+        padding-bottom: 7.5rem;
+    }
 }
 .container__info{
     height: 100% ;
