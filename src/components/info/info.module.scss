@@ -1,3 +1,46 @@
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+      @return $number / ($number * 0 + 1.35);
+    }
+  
+    @return $number;
+}
+  
+@function calcFluidFontSize($f-min, $f-max, $w-min, $w-max, $units: px) {
+    $f-min: strip-unit($f-min);
+    $f-max: strip-unit($f-max);
+    $w-min: strip-unit($w-min);
+    $w-max: strip-unit($w-max);
+    
+      $k: ($f-max - $f-min)/($w-max - $w-min);
+      $b: $f-min - $k * $w-min;
+  
+      $b: $b + $units;
+  
+      @return calc( #{$k} * 100vw + #{$b} );
+}
+  
+@mixin fluidFontSize($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+    
+    font-size: $f-min;
+    
+    @media (min-width: $w-min) {
+      @if ($fallback) {
+        font-size: $fallback;
+      }
+      font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, px);  
+    }
+    @media (min-width: $w-max) {
+      font-size: $f-max;
+    }
+}
+  
+.fluid_font_size {
+    @include fluidFontSize(24px, 180px, 300px, 1920px, px);
+    font-weight: 500;
+}
+
+
 .info{
     height: 100vh;
     padding-top: 3.75rem;
@@ -25,18 +68,18 @@
     border-left: 1px solid #008DFC;
 }
 .info__title{
-    font-size: 4rem;
+    @include fluidFontSize(38px, 98px, 300px, 1920px, px);
     font-weight: 400;
     line-height: 0.8;
 }
 .info__title__ft{
-    font-size: calc(1rem + 0.75vw);
+     @include fluidFontSize(20px, 36px, 300px, 1920px, px);
     letter-spacing: 0.05em;
     padding-bottom: 3vh;
     font-weight: 400;
 }
 .info__title__sd{
-    font-size: calc(1.15rem + 2.125vw);
+    @include fluidFontSize(32px, 64px, 300px, 1920px, px);
     letter-spacing: -0.015em;
     line-height: 1.05;
     font-weight: 400;
@@ -44,7 +87,7 @@
     padding-bottom: 1.5vh;
 }
 .info__adv{
-    font-size: 15px;
+    @include fluidFontSize(14px, 22px, 300px, 1920px, px);
     line-height: 1.55;
     letter-spacing: 0.05em;
 }
