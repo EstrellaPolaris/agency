@@ -48,7 +48,7 @@
     overflow: hidden;
     padding-top: 7vh;
     @media (max-width: 576px) {
-        padding-top: 3.5vh;
+        padding-top: 0vh;
     }
 }
 .container__hero__title__left{
@@ -74,6 +74,9 @@
     padding-left: 10vw;
     display: flex;
     justify-content: right;
+    @media (max-width: 576px) {
+        overflow: hidden;
+    }
 }
 .container__hero__usp{
     padding-left: 14vw;
