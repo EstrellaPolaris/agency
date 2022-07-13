@@ -7,9 +7,8 @@ body {
   font-family: 'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-left: 2.4rem;
-  padding-right: 2.4rem;
-  border:1px solid red;
+  padding-left: 2.75vw;
+  padding-right:2.75vw;
 }
 
 code {

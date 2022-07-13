@@ -2,14 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border:1px solid red;
+    padding: 4vh 0;
 }
-.a, .nav-link, .header__nav, .nav__link, .container__nav {
-    padding: 0 1.5rem;
+.container__nav{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+}
+.a, .nav-link, .header__nav, .nav__link{
     text-decoration: none;
     color: #fff;
     letter-spacing: 0.05em;
 }
+
 .header__nav{
     border:1px solid #008DFC;
 }

@@ -36,24 +36,23 @@
 }
   
 .fluid_font_size {
-    @include fluidFontSize(24px, 186px, 300px, 1920px, px);
+    @include fluidFontSize(24px, 180px, 300px, 1920px, px);
     font-weight: 500;
 }
 
 .hero {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 12vh - 72px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    
-    padding-top: 8vh;
+    padding-top: 10vh;
 }
 .container__hero__title__left{
     display: flex;
     justify-content:left;
-    line-height: 1;
-    letter-spacing: -0.2em;
+    line-height: 1.05;
+    letter-spacing: 0em;
 }
 .fluid_font_size:last-child {
     padding-top: 0.5vh;
@@ -63,8 +62,8 @@
     display: flex;
     justify-content: right;
     color: #008dfc;
-    line-height: 1;
-    letter-spacing: -0.15em;
+    line-height: 1.05;
+    letter-spacing: 0em;
 }
 .container__hero__news{
     position: absolute;
@@ -72,7 +71,6 @@
     padding-left: 10vw;
     display: flex;
     justify-content: right;
-    border: 1px solid red;
 }
 .container__hero__usp{
     padding-left: 14vw;
@@ -81,12 +79,11 @@
 }
 .title__fh {
     justify-content: right;
-    width: 28vw;
+    width: 30vw;
     font-size: calc(1rem + 0.4vw);
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.05em;
-    border: 1px solid red;
 }
 
 .container__hero__img {
@@ -108,6 +105,9 @@
     letter-spacing: 0.05em;
 }
 .container__hero__roundbtn {
+    position: absolute;
+    top: 70vh;
+    left: 33vw;
     margin: 3vh auto;
     display: flex;
     align-items: center;
