@@ -36,30 +36,35 @@
 }
   
 .fluid_font_size {
-    @include fluidFontSize(16px, 180px, 310px, 1920px, px);
+    @include fluidFontSize(24px, 186px, 300px, 1920px, px);
     font-weight: 500;
 }
+
 .hero {
     height: calc(100vh - 120px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    letter-spacing: 0.0175em;
+    
     padding-top: 8vh;
 }
 .container__hero__title__left{
     display: flex;
     justify-content:left;
-    border: 1px solid red;
-    line-height: 1.15;
+    line-height: 1;
+    letter-spacing: -0.2em;
+}
+.fluid_font_size:last-child {
+    padding-top: 0.5vh;
+    padding-left: 1vw;
 }
 .container__hero__title__right{
     display: flex;
     justify-content: right;
-    border: 1px solid red;
     color: #008dfc;
-    line-height: 1.15;
+    line-height: 1;
+    letter-spacing: -0.15em;
 }
 .container__hero__news{
     position: absolute;
