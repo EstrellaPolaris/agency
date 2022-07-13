@@ -95,12 +95,10 @@
         width: 50vw;
     }
     @media (max-width: 576px) {
-        margin-top: 6rem;
+        margin-top: 8rem;
         line-height: 1.2;
-        width: 90vw;
-    }
-    @media (max-width: 420px) {
         width: 100vw;
+        justify-content: left;
     }
 }
 
