@@ -52,11 +52,11 @@ const dataCollection = [
     content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias sint cupiditate repellendus eum tempore fugit placeat sed alias perspiciatis ratione quod eligendi suscipit itaque, unde, esse earum. Iusto, vel dignissimos'
   },
   {
-    title: 'Corporate identity design',
+    title: 'Identity design',
     content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias sint cupiditate repellendus eum tempore fugit placeat sed alias perspiciatis ratione quod eligendi suscipit itaque, unde, esse earum. Iusto, vel dignissimos'
   },
   {
-    title: 'Marketing and advertising',
+    title: 'Advertising',
     content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias sint cupiditate repellendus eum tempore fugit placeat sed alias perspiciatis ratione quod eligendi suscipit itaque, unde, esse earum. Iusto, vel dignissimos'
   }
 ];
