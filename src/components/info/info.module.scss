@@ -31,7 +31,7 @@
     border-left: 1px solid #008DFC;
 }
 .info__title{
-    @include fluidFontSize(50px, 98px, 300px, 1920px, px);
+    @include fluidFontSize(52px, 98px, 300px, 1920px, px);
     font-weight: 400;
     line-height: 0.8;
 }

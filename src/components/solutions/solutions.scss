@@ -30,8 +30,8 @@
 }
 h2{
     font-family: 'Poppins';
-    @include fluidFontSize(58px, 78px, 300px, 1920px, px);
-    letter-spacing: -0.015em;
+    @include fluidFontSize(42px, 80px, 300px, 1920px, px);
+    letter-spacing: 0.015em;
     line-height: 1.15;
     font-weight: 400;
     padding-top: 3vh;
