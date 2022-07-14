@@ -38,11 +38,11 @@
 .info__title__ft{
      @include fluidFontSize(26px, 36px, 300px, 1920px, px);
     letter-spacing: 0.05em;
-    padding-bottom: 3vh;
+    padding-bottom: 2vh;
     font-weight: 400;
 }
 .info__title__sd{
-    @include fluidFontSize(38px, 64px, 300px, 1920px, px);
+    @include fluidFontSize(32px, 64px, 300px, 1920px, px);
     letter-spacing: 0.015em;
     line-height: 1.05;
     font-weight: 400;
