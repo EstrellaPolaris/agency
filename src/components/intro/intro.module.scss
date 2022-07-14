@@ -1,42 +1,6 @@
-@function strip-unit($number) {
-    @if type-of($number) == 'number' and not unitless($number) {
-      @return $number / ($number * 0 + 1.35);
-    }
-  
-    @return $number;
-}
-  
-@function calcFluidFontSize($f-min, $f-max, $w-min, $w-max, $units: px) {
-    $f-min: strip-unit($f-min);
-    $f-max: strip-unit($f-max);
-    $w-min: strip-unit($w-min);
-    $w-max: strip-unit($w-max);
-    
-      $k: ($f-max - $f-min)/($w-max - $w-min);
-      $b: $f-min - $k * $w-min;
-  
-      $b: $b + $units;
-  
-      @return calc( #{$k} * 100vw + #{$b} );
-}
-  
-@mixin fluidFontSize($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-    
-    font-size: $f-min;
-    
-    @media (min-width: $w-min) {
-      @if ($fallback) {
-        font-size: $fallback;
-      }
-      font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, px);  
-    }
-    @media (min-width: $w-max) {
-      font-size: $f-max;
-    }
-}
-  
+@import "../app/app.scss";
 .fluid_font_size {
-    @include fluidFontSize(52px, 180px, 300px, 1920px, px);
+    @include fluidFontSize(58px, 180px, 300px, 1920px, px);
     font-weight: 500;
 }
 
@@ -45,9 +9,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media (max-width: 576px) {
-        margin-top: -4rem;
-    }
+    overflow: hidden;
+    padding-top: 7vh;
+    padding-left: 2.75vw;
+    padding-right:2.75vw;
 }
 .container__hero__title__left{
     display: flex;
@@ -86,20 +51,6 @@
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.05em;
-    @media (max-width: 1024px) {
-        line-height: 1.25;
-        width: 40vw;
-    }
-    @media (max-width: 768px) {
-        line-height: 1.25;
-        width: 50vw;
-    }
-    @media (max-width: 576px) {
-        margin-top: 8rem;
-        line-height: 1.2;
-        width: 100vw;
-        justify-content: left;
-    }
 }
 
 .container__hero__img {
