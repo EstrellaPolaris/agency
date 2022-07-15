@@ -12,6 +12,10 @@
     padding-top: 7vh;
     padding-left: 2.75vw;
     padding-right:2.75vw;
+    @media (max-width: 576px) {
+        padding-top: 4vh;
+        }
+
 }
 .container__intro__title__left{
     display: flex;
@@ -33,17 +37,17 @@
 .container__intro__news{
     width: 50vw;
     position: absolute;
-    top: 50vh;
+    top: 52vh;
     display: flex;
     justify-content: center;
 
     @media (max-width: 992px) {
-       
+        top: 55vh;
         }
     @media (max-width: 768px) {
-        top: 52vh;
+        top: 56vh;
         }
-    @media (max-width: 474px) {
+    @media (max-width: 576px) {
     display: none;
     }
 }
@@ -78,18 +82,19 @@
     justify-content: right;
     width: 35vw;
     padding-top: 3vh;
-    @include fluidFontSize(26px, 36px, 300px, 1920px, px);
+    @include fluidFontSize(20px, 36px, 300px, 1920px, px);
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.05em;
+    @media (max-width: 992px) {
+        width: 60vw;
+        }
     @media (max-width: 768px) {
-        width: 50vw;
+        width: 60vw;
         }
     @media (max-width: 576px) {
-        width: 75vw;
-    }
-    @media (max-width: 420px) {
         width: 100vw;
+        padding-top: 12vh;
     }
 }
 
