@@ -7,11 +7,30 @@
     height: calc(100vh - 12vh);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
-    padding-top: 7vh;
     padding-left: 2.75vw;
     padding-right:2.75vw;
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 576px) {
+       
+    }
+
+}
+.container__intro__title__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 60vh;
+    padding-top: 9.5vw;
+    border: 1px solid #008dfc;
+    @media (max-width: 1024px) {
+        padding-top: 14vw;
+    }
+    @media (max-width: 992px) {
+        padding-top: 15vw;
+    }
 }
 .container__intro__title__left{
     display: flex;
@@ -31,45 +50,82 @@
     letter-spacing: 0em;
 }
 .container__intro__news{
+    width: 50vw;
     position: absolute;
-    top: 50vh;
-    padding-left: 10vw;
+    top: 52vh;
     display: flex;
-    justify-content: right;
-}
-.container__intro__usp{
-    padding-left: 14vw;
-    display: flex;
-    justify-content: right;
-}
-.title__fh {
-    justify-content: right;
-    width: 35vw;
-    padding-top: 3vh;
-    @include fluidFontSize(26px, 36px, 300px, 1920px, px);
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 0.05em;
-}
+    justify-content: center;
 
+    @media (max-width: 992px) {
+        top: 50vh;
+        }
+    @media (max-width: 768px) {
+        top: 51.5vh;
+        }
+    @media (max-width: 576px) {
+    display: none;
+    }
+}
 .container__intro__img {
-    width: 100%;
-    margin-top: -20px;
-    margin-bottom: -20px;
+    width: 28%;
+    margin-right: 12vw;
 }
 .img {
-    width: 35%;
+    width: 100%;
 }
 .blog{
-    padding-top: 1vh;
-    font-size: 0.8rem;
+    @include fluidFontSize(16px, 20px, 300px, 1920px, px);
+    padding-top: 0.125rem;
     letter-spacing: 0.05em;
 }
 .blog__title{
-    padding-top: 1vh;
+    @include fluidFontSize(18px, 22px, 300px, 1920px, px);
     font-size: 1.2rem;
     letter-spacing: 0.05em;
 }
+
+.container__intro__usp{
+    height: 40vh;
+    padding-top:2vh;
+    border: 1px solid #008dfc;
+    display: flex;
+    justify-content: right;
+    @media (max-width: 1024px) {
+    
+    }
+    @media (max-width: 992px) {
+       
+    }
+    @media (max-width: 768px) {
+
+    }
+
+}
+.title__fh {
+    border: 1px solid #008dfc;
+    justify-content: right;
+    width: 35vw;
+    @include fluidFontSize(20px, 32px, 300px, 1920px, px);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    @media (max-width: 1024px) {
+        width: 40vw;
+    }
+    @media (max-width: 992px) {
+        width: 47vw;
+    }
+    @media (max-width: 768px) {
+       
+    }
+
+    @media (max-width: 576px) {
+        width: 100vw;
+        align-self: flex-end;
+        padding-bottom: 10vh;
+    }
+}
+
 .container__intro__roundbtn {
     position: absolute;
     top: 72vh;
