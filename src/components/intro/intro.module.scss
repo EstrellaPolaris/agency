@@ -9,6 +9,7 @@
 
 }
 .intro {
+    border: 1px solid red;
     height: calc(100vh - 12vh);
     display: flex;
     flex-direction: column;
@@ -17,13 +18,11 @@
     padding-top: 7vh;
     padding-left: 2.75vw;
     padding-right:2.75vw;
-    @media (max-width: 576px) and (max-aspect-ratio:13/6) {
-        padding-top: 0vh;
-        }
     @media (max-width: 992px) and (max-height:558px) {
         padding-top: 0vh;
+        padding-left: 7.75vw;
+        padding-right:7.75vw;
     }
-
 }
 .container__intro__title__left{
     display: flex;
@@ -84,7 +83,7 @@
     letter-spacing: 0.05em;
     @media (max-width: 992px) and (max-height:558px) {
         @include fluidFontSize(10px, 18px, 150px, 992px, px);
-        
+
     }
 }
 
