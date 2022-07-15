@@ -7,30 +7,11 @@
     height: calc(100vh - 12vh);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     overflow: hidden;
+    padding-top: 7vh;
     padding-left: 2.75vw;
     padding-right:2.75vw;
-    @media (max-width: 768px) {
-    }
-    @media (max-width: 576px) {
-       
-    }
-
-}
-.container__intro__title__wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 60vh;
-    padding-top: 9.5vw;
-    border: 1px solid #008dfc;
-    @media (max-width: 1024px) {
-        padding-top: 14vw;
-    }
-    @media (max-width: 992px) {
-        padding-top: 15vw;
-    }
 }
 .container__intro__title__left{
     display: flex;
@@ -52,23 +33,27 @@
 .container__intro__news{
     width: 50vw;
     position: absolute;
-    top: 52vh;
+    top: 50vh;
     display: flex;
     justify-content: center;
 
     @media (max-width: 992px) {
-        top: 50vh;
+       
         }
     @media (max-width: 768px) {
-        top: 51.5vh;
+        top: 52vh;
         }
-    @media (max-width: 576px) {
+    @media (max-width: 474px) {
     display: none;
     }
 }
+
+
 .container__intro__img {
-    width: 28%;
-    margin-right: 12vw;
+    width: 33.33%;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-right: 15vw;
 }
 .img {
     width: 100%;
@@ -79,50 +64,32 @@
     letter-spacing: 0.05em;
 }
 .blog__title{
-    @include fluidFontSize(18px, 22px, 300px, 1920px, px);
+    @include fluidFontSize(16px, 26px, 300px, 1920px, px);
+    padding-top: 0;
     font-size: 1.2rem;
     letter-spacing: 0.05em;
 }
 
 .container__intro__usp{
-    height: 40vh;
-    padding-top:2vh;
-    border: 1px solid #008dfc;
     display: flex;
     justify-content: right;
-    @media (max-width: 1024px) {
-    
-    }
-    @media (max-width: 992px) {
-       
-    }
-    @media (max-width: 768px) {
-
-    }
-
 }
 .title__fh {
-    border: 1px solid #008dfc;
     justify-content: right;
     width: 35vw;
-    @include fluidFontSize(20px, 32px, 300px, 1920px, px);
+    padding-top: 3vh;
+    @include fluidFontSize(26px, 36px, 300px, 1920px, px);
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.05em;
-    @media (max-width: 1024px) {
-        width: 40vw;
-    }
-    @media (max-width: 992px) {
-        width: 47vw;
-    }
     @media (max-width: 768px) {
-       
-    }
-
+        width: 50vw;
+        }
     @media (max-width: 576px) {
+        width: 75vw;
+    }
+    @media (max-width: 420px) {
         width: 100vw;
-        align-self: flex-end;
-        padding-bottom: 10vh;
     }
 }
 

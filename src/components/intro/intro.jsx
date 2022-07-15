@@ -45,7 +45,7 @@ const Intro = () => {
       whileInView="visible"
       viewport={{ amount: 0.1, once: true}}
       className={`${classes.intro} container-fluid g-0`}
-    ><div className={classes.container__intro__title__wrapper}>
+    >
       <article className={classes.container__intro__title__left} >
         <motion.div custom={1} variants={textAnimationright} className={classes.fluid_font_size}>Technology</motion.div>
         <motion.div custom={1} variants={textAnimationright} className={classes.fluid_font_size}> +</motion.div>
@@ -53,7 +53,6 @@ const Intro = () => {
       <article className={classes.container__intro__title__right} >
         <motion.div custom={1} variants={textAnimationleft} className={`${classes.fluid_font_size} blue`}>Creativity</motion.div>
       </article>
-      </div>
       <article className={classes.container__intro__news}>
         <motion.div custom={2} variants={textAnimationup} className={classes.container__intro__img}>
           <img src={Img} alt="hero" className={classes.img} />
