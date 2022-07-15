@@ -69,7 +69,6 @@
 }
 .blog__title{
     @include fluidFontSize(16px, 26px, 300px, 1920px, px);
-    padding-top: 0;
     font-size: 1.2rem;
     letter-spacing: 0.05em;
 }
@@ -94,7 +93,7 @@
         }
     @media (max-width: 576px) {
         width: 100vw;
-        padding-top: 12vh;
+        padding-top: 40vh;
     }
 }
 
